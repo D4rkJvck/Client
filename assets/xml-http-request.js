@@ -1,5 +1,5 @@
 // 1./ Define URL
-const url = 'http://localhost:8080'
+const url = 'http://localhost:8080/user'
 
 // 2./ Create Request
 const request = new XMLHttpRequest()
@@ -13,10 +13,11 @@ request.send()
 // 5./ Handle Response
 request.onload = () => {
     if (request.status == 200) {
-        const data = JSON.parse(request.responseText)
+        console.log(request.responseXML)
+        // const data = JSON.parse(request.responseText)
         ///////////////////
-        console.log(data)
-        //////////////////
+        // console.log(data)
+        ////////////////
     } else {
         console.log('ERROR: ', request.statusText)
     }
