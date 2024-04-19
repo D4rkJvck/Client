@@ -17,7 +17,7 @@ fetch('http://127.0.0.1:5500')
 
 // 7. Single Page Effect
 const theme_button = document.createElement('button')
-theme_button.innerText = 'Change Theme'
+theme_button.innerText = 'Theme'
 
 elem.HEADER.appendChild(theme_button)
 
