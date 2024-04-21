@@ -10,23 +10,29 @@
 
 <body>
 
-    <header>
+    <header id="main_header">
         <h1 id="title">CLIENT</h1>
     </header>
 
+    <!----------------------------------------->
     <main>
-        <section id="profile">
-            <h2 class="title"> Profile</h2>
+        <!-- Profile -->
+        <section id="profile" class="container">
+            <h2> Profile</h2>
         </section>
-        <section id="feeds">
-            <h2 class="title">Feeds</h2>
-        </section>
-        <section id="chat">
-            <h2 class="title">Chat</h2>
-        </section>
-    </main>
 
-    <footer></footer>
+        <!-- Feeds -->
+        <section id="feeds" class="container">
+            <h2>Feeds</h2>
+            <div id="posts"></div>
+        </section>
+
+        <!-- Chat -->
+        <aside class="container">
+            <h2>Messages</h2>
+        </aside>
+    </main>
+    <!----------------------------------------->
 
     <script type="module" src="assets/js/app.js"></script>
 </body>
