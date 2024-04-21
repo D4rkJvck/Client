@@ -22,7 +22,7 @@ html *,
 html *::before,
 html *::after {
      box-sizing: border-box;
-     font: bolder var(--font-12) monospace;
+     font: var(--font-14) system-ui;
      margin: 0;
      padding: 0;
 }
@@ -32,31 +32,31 @@ body {
      background-color: var(--lki-body-bg);
      color: white;
      display: grid;
+     grid-template-columns: 88vw;
      grid-template-rows: 8vh 92vh;
      justify-content: center;
 }
 
-#main_header {
+header {
      align-items: center;
      display: flex;
      flex-direction: row;
      grid-row: 1;
-     height: 8vh;
      justify-content: space-between;
 }     
 
 h1 {
      color: #999999;
-     font-size: var(--font-18);
+     font: bolder var(--font-18) monospace;
+     line-height: 8vh;
 }     
 
 main {
      display: grid;
      grid-row: 2;
-     grid-template-columns: 20vw 36vw 28vw;
-     height: 88vh;
+     grid-template-columns: 20vw 34vw 28vw;
+     grid-template-rows: 88vh;
      justify-content: space-between;
-     width: 88vw;
 }     
 
 .container {
@@ -66,50 +66,56 @@ main {
      border-radius: 8px;
      color: rgba(255, 255, 255, 0.1);
      display: grid;
-     grid-template-rows: 4vh 84vh;
+     grid-template-rows: 4vh 1fr;
      justify-content: center;
 }
 
 h2 {
      grid-row: 1;
-     font-size: var(--font-16);
+     font: bolder var(--font-16) monospace;
      height: 4vh;
      line-height: 4vh;
      text-align: center;
-     /* margin: 2vh 0; */
 }
 
 #profile {
      grid-column: 1;
+     grid-template-columns: 18vw;
 }
 
 #feeds {
+     background-color: #000000;
+     border: none;
+     color: #ffffff25;
      grid-column: 2;
+     grid-template-columns: 1fr;
 }
 
 #posts {
      border-radius: 8px;
      display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: 1fr;
      gap: 2vh;
      grid-row: 2;
-     height: 80vh;
+     height: 84vh;
      overflow: scroll;
      scrollbar-width: none;
-     width: 32vw;
 }     
 
 article {
      align-items: center;
-     background-color: #000000;
+     background-color: var(--lki-section-bg);
+     border: 1px solid var(--lki-section-border);
      border-radius: 8px;
+     color: #ffffffaa;
      display: grid;
-     grid-template-rows: 4vh 12vh;
-     min-height: 20vh;
-     max-height: 60vh;
-     /* width: 48vw; */
+     /* gap: 1vh; */
+     grid-template-columns: 32vw;
+     grid-template-rows: 8vh 4vh 1fr;
+     height:max-content;
+     justify-content: center;
 }
-
-head
 
 aside {
      grid-column: 3;
