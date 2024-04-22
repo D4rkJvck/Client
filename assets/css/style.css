@@ -1,8 +1,8 @@
 :root {
      /* LinkedIn THEME COLORS */
      --lki-body-bg: #000000;
-     --lki-section-bg: #1b1f23;
-     --lki-section-border: #232222;
+     --lki-section-bg: #00000099;
+     --lki-section-border: #ffffff20;
 
      /* Kilogram THEME COLORS */
      --kg-body-bg: ;
@@ -29,11 +29,12 @@ html *::after {
 
 body {
      align-items: center;
-     background-color: var(--lki-body-bg);
+     background-image: url('../img/background_dark.webp');
+     /* background-color: var(--lki-body-bg); */
      color: white;
      display: grid;
-     grid-template-columns: 88vw;
-     grid-template-rows: 8vh 92vh;
+     grid-template-columns: 85vw;
+     grid-template-rows: 10vh 90vh;
      justify-content: center;
 }
 
@@ -48,14 +49,14 @@ header {
 h1 {
      color: #999999;
      font: bolder var(--font-18) monospace;
-     line-height: 8vh;
+     line-height: 10vh;
 }     
 
 main {
      display: grid;
      grid-row: 2;
-     grid-template-columns: 20vw 34vw 28vw;
-     grid-template-rows: 88vh;
+     grid-template-columns: 20vw 35vw 25vw;
+     grid-template-rows: 85vh;
      justify-content: space-between;
 }     
 
@@ -64,29 +65,29 @@ main {
      background-color: var(--lki-section-bg);
      border: 1px solid var(--lki-section-border);
      border-radius: 8px;
-     color: rgba(255, 255, 255, 0.1);
+     color: #ffffff25;
      display: grid;
-     grid-template-rows: 4vh 1fr;
+     grid-template-rows: 5vh 1fr;
      justify-content: center;
 }
 
 h2 {
      grid-row: 1;
      font: bolder var(--font-16) monospace;
-     height: 4vh;
-     line-height: 4vh;
+     height: 5vh;
+     line-height: 5vh;
      text-align: center;
 }
 
 #profile {
      grid-column: 1;
-     grid-template-columns: 18vw;
+     grid-template-columns: 20vw;
 }
 
 #feeds {
-     background-color: #000000;
+     background-color: transparent;
      border: none;
-     color: #ffffff25;
+     color: #ffffff75;
      grid-column: 2;
      grid-template-columns: 1fr;
 }
@@ -96,9 +97,9 @@ h2 {
      display: grid;
      grid-template-columns: 1fr;
      grid-template-rows: 1fr;
-     gap: 2vh;
+     gap: 2.5vh;
      grid-row: 2;
-     height: 84vh;
+     height: 80vh;
      overflow: scroll;
      scrollbar-width: none;
 }     
@@ -110,11 +111,21 @@ article {
      border-radius: 8px;
      color: #ffffffaa;
      display: grid;
-     /* gap: 1vh; */
-     grid-template-columns: 32vw;
-     grid-template-rows: 8vh 4vh 1fr;
-     height:max-content;
+     grid-template-columns: 30vw;
+     grid-template-rows: 10vh 10vh 1fr;
+     height:fit-content;
      justify-content: center;
+}
+
+h3 {
+     grid-row: 2;
+     color: white;
+     justify-self: center;
+     line-height: 5vh;
+}
+
+.content {
+     margin-bottom: 5vh;
 }
 
 aside {
